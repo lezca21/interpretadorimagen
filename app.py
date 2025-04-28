@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Agregar un poquito de CSS para embellecer
+# CSS para fondo rosadito y texto negro
 st.markdown("""
     <style>
     body {
@@ -23,7 +23,7 @@ st.markdown("""
     }
     .stApp {
         background: linear-gradient(to bottom right, #ffe4e1, #ffffff);
-        color: #4b2e2e;
+        color: black;
         font-family: 'Comic Sans MS', cursive, sans-serif;
     }
     h1, h2, h3 {
@@ -133,6 +133,5 @@ else:
         st.warning("⚠️ Por favor sube una imagen antes de analizar.")
     if not api_key:
         st.warning("⚠️ Ingresa tu API Key para continuar.")
-
 
 
